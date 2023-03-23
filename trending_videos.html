@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Top Trending Videos</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body style="background-color:#29bfe3 ;text-align:center;">
+    <h1 style="color:red";>Youtube Trending Video Metadata Analysis Using Machine Learning</h1>
+	<table style="margin:auto">
+		<tr>
+			<th>Video Title</th>
+			<th>Channel Title</th>
+			<th>Category</th>
+			<th>Views</th>
+			<th>Likes</th>
+			<th>Dislikes</th>
+			<th>Comments</th>
+		</tr>
+		{% for video in trending_videos %}
+		<tr>
+			<td>{{ video['title'] }}</td>
+			<td>{{ video['channel_title'] }}</td>
+			<td>{{ video['category_id'] }}</td>
+			<td>{{ video['views'] }}</td>
+			<td>{{ video['likes'] }}</td>
+			<td>{{ video['dislikes'] }}</td>
+			<td>{{ video['comment_count'] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	<h1>See the Name of the Category by id </h1>
+    <table>
+		<tr>
+			<th>category_id</th>
+			<th>categoryName</th>
+		</tr>
+		<tr>
+			<td>1.</td>
+			<td>Film & Animation</td>
+			<tr><td>2.</td>
+			<td>Autos & Vehicles</td></tr>
+			<tr><td>10</td>
+			<td>Music</td></tr>
+			<tr>
+				<td>15</td>
+				<td>Pets & Animals</td>
+			</tr>
+			<tr>
+				<td>17</td>
+				<td>Sports</td>
+			</tr>
+			<tr>
+				<td>18</td>
+				<td>Short Movies</td>
+			</tr>
+			<tr>
+				<td>19</td>
+				<td>Travel & Events</td>
+			</tr>
+			<tr>
+				<td>20</td>
+				<td>Gaming</td>
+			</tr>
+			<tr>
+				<td>21</td>
+				<td>Videoblogging</td>
+			</tr>
+			<tr>
+				<td>22</td>
+				<td>People & Blogs</td>
+			</tr>
+			<tr>
+				<td>23</td>
+				<td>Comedy</td>
+			</tr>
+			<tr>
+				<td>24</td>
+				<td>Entertainment</td>
+			</tr>
+			<tr>
+				<td>25</td>
+				<td>News & Politics</td>
+			</tr>
+			<tr>
+				<td>26</td>
+				<td>Howto & Style</td>
+			</tr>
+			<tr>
+				<td>27</td>
+				<td>Education</td>
+			</tr>
+			<tr>
+				<td>28</td>
+				<td>Science & Technology</td>
+			</tr>
+			<tr>
+				<td>29</td>
+				<td>Nonprofits & Activism</td>
+			</tr>
+			<tr>
+				<td>30</td>
+				<td>Movies</td>
+			</tr>
+			<tr>
+				<td>31</td>
+				<td>Anime/Animation</td>
+			</tr>
+			<tr>
+				<td>32</td>
+				<td>Action/Adventure</td>
+			</tr>
+			<tr>
+				<td>33</td>
+				<td>Classics</td>
+			</tr>
+			<tr>
+				<td>34</td>
+				<td> Comedy</td>
+			</tr>
+			<tr>
+				<td>35</td>
+				<td>Documentary</td>
+			</tr>
+			<tr>
+				<td>36</td>
+				<td>Drama</td>
+			</tr>
+			<tr>
+				<td>37</td>
+				<td>Family</td>
+			</tr>
+			<tr>
+				<td>38</td>
+				<td>Foreign</td>
+			</tr>
+			<tr>
+				<td>39</td>
+				<td>Horror</td>
+			</tr>
+			<tr>
+				<td>40</td>
+				<td>Sci-Fi/Fantasy</td>
+			</tr>
+			<tr>
+				<td>41</td>
+				<td>Thriller</td>
+			</tr>
+			<tr>
+				<td>42</td>
+				<td>Shorts</td>
+			</tr>
+			<tr>
+				<td>43</td>
+				<td>Shows</td>
+			</tr>
+			<tr>
+				<td>44</td>
+				<td>Trailers</td>
+			</tr>
+		</tr>
+	</table>
+</body>
+</html>
+
